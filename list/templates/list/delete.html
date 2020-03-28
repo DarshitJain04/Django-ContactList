@@ -1,0 +1,8 @@
+<div class="container">
+	<p>Are you sure you want to delete '{{item}}' contact ?</p>
+	<a href="{% url 'home' %}">Cancel</a>
+	<form method="POST" action="">
+		{% csrf_token %}
+		<button class="btn btn-danger" type="submit" name="Confirm">Confirm</button>
+	</form>
+</div>
